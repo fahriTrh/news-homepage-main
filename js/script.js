@@ -46,9 +46,12 @@ window.onresize = () => {
         navMenu.style.opacity = '0';
     }
     if (window.innerWidth >= 576) {
+        menuIcon.style.display = 'block';
         overlay.style.right = '';
         closeIcon.style.display = 'none'
         document.body.style.overflow = 'auto';
+        navMenu.style.zIndex = '-10';
+        navMenu.style.opacity = '0';
     }
     if (window.innerWidth >= 768) {
         navMenu.style.zIndex = '10';
